@@ -1,0 +1,48 @@
+{
+  "name": "sample-react-library",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./*": {
+      "import": "./dist/components/*/index.mjs",
+      "require": "./dist/components/*/index.js",
+      "types": "./dist/components/*/index.d.ts"
+    },
+    "./styles.css": {
+      "import": "./dist/styles.css",
+      "require": "./dist/styles.css"
+    }
+  },
+  "scripts": {
+    "build": "tsup && pnpm build:tailwind --minify -o ./dist/styles.css",
+    "dev": "tsup --watch --onSuccess \"pnpm build:tailwind --watch\"",
+    "build:tailwind": "pnpm tailwindcss -i ./src/style.css  -o ./dist/styles.css"
+  },
+  "keywords": [
+    "react",
+    "component library"
+  ],
+  "author": "Franklin Shera",
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.0.2"
+  }
+}

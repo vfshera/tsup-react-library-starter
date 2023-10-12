@@ -1,0 +1,23 @@
+{
+  "name": "component-library",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install:all": "pnpm -r install",
+    "watch": "pnpm --filter=sample-react-library dev",
+    "dev": "concurrently \"pnpm run watch\" \"pnpm react:demo\" \"pnpm remix:demo\" \"pnpm next:demo\"",
+    "build": "pnpm --filter=sample-react-library build",
+    "react:demo": "pnpm --filter=react-demo dev",
+    "next:demo": "pnpm --filter=next-demo dev",
+    "remix:demo": "pnpm --filter=remix-demo dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sample-react-library": "workspace:^"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
