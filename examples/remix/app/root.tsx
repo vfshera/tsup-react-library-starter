@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { SampleLibProvider } from "sample-react-library";
 
 import "sample-react-library/styles.css";
 export const links: LinksFunction = () => [
@@ -24,7 +25,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <SampleLibProvider options={{ a: "Remix", b: "App" }}>
+          <Outlet />
+        </SampleLibProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
