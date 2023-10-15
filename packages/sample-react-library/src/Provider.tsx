@@ -1,6 +1,12 @@
-import React, { FC, ReactNode, createContext, useContext } from "react";
+import { FC, ReactNode, createContext, useContext } from "react";
 
-import { Config, defaultConfig } from "./config";
+// eslint-disable-next-line react-refresh/only-export-components
+export const defaultConfig = {
+  btnId: "sample-btn",
+  headingId: "sample-heading",
+};
+
+export type Config = typeof defaultConfig;
 
 export interface ProviderProps {
   children: ReactNode;
