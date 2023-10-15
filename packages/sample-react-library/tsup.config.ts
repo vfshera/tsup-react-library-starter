@@ -6,7 +6,7 @@ export default defineConfig((options) => ({
   dts: true,
   clean: true,
   sourcemap: true,
-  target: "es2016",
+  target: "es2022",
   external: ["react", "react/jsx-runtime"],
   minify: !options.watch,
   banner: { js: '"use client";' },

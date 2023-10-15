@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "lib": ["DOM", "ES2015"],
+    "lib": ["DOM", "ES2022", "DOM.Iterable"],
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "moduleDetection": "force"
   }
 }
