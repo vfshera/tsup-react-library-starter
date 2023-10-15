@@ -25,7 +25,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <SampleLibProvider options={{ a: "Remix", b: "App" }}>
+        <SampleLibProvider options={{ headingId: "remix-heading" }}>
           <Outlet />
         </SampleLibProvider>
         <ScrollRestoration />

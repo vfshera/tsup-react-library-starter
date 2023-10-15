@@ -8,7 +8,7 @@ import { SampleLibProvider } from "sample-react-library";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <SampleLibProvider options={{ a: "React", b: "App" }}>
+    <SampleLibProvider options={{ btnId: "react-btn" }}>
       <App />
     </SampleLibProvider>
   </React.StrictMode>
