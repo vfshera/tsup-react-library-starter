@@ -10,8 +10,9 @@ import {
 } from "@remix-run/react";
 import { SampleLibProvider } from "sample-react-library";
 
-import "sample-react-library/styles.css";
+import stylesheet from "~/tailwind.css";
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 

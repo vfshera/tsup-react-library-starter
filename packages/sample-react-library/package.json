@@ -19,8 +19,8 @@
     }
   },
   "scripts": {
-    "build": "tsup && pnpm build:tailwind --minify -o ./dist/styles.css",
-    "dev": "tsup --watch --onSuccess \"pnpm build:tailwind --watch\"",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "build:tailwind": "pnpm tailwindcss -i ./src/style.css  -o ./dist/styles.css"
   },
   "keywords": [

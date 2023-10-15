@@ -5,7 +5,7 @@
   "scripts": {
     "install:all": "pnpm -r install",
     "watch": "pnpm --filter=sample-react-library dev",
-    "dev": "pnpm run watch",
+    "dev": "pnpm run watch --onSuccess \"pnpm -w run start:demos\"",
     "start:demos": "concurrently \"pnpm react:demo\" \"pnpm remix:demo\" \"pnpm next:demo\"",
     "build": "pnpm --filter=sample-react-library build",
     "react:demo": "pnpm --filter=react-demo dev",
