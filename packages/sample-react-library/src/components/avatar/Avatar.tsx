@@ -1,16 +1,19 @@
-import React, { FC, ImgHTMLAttributes } from "react";
+import React, { FC } from "react";
+import { HTMLProps } from "../../types";
 
-export interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement> {}
+// type Img = ImgHTMLAttributes<HTMLImageElement>;
+export interface AvatarProps extends HTMLProps<"img"> {}
 
 export const Avatar: FC<AvatarProps> = ({
   src,
   alt = "Avatar",
+  as: Component = "img",
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   className: _,
   ...props
 }) => {
   return (
-    <img
+    <Component
       src={src}
       {...props}
       className="w-32 rounded-full shadow-lg "
