@@ -28,8 +28,9 @@ module.exports = {
   rules: {
     "react/require-default-props": "off",
     "react/function-component-definition": [
+      2,
       {
-        namedComponents: "function-declaration" | "arrow-function",
+        namedComponents: ["function-declaration", "arrow-function"],
         unnamedComponents: "function-expression",
       },
     ],

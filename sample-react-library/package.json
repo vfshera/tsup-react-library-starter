@@ -22,8 +22,8 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "build:tailwind": "pnpm tailwindcss -i ./src/style.css  -o ./dist/styles.css",
-    "lint": "eslint -c .eslintrc.json ./src/**/*.{ts,tsx}",
-    "lint:fix": "eslint --fix -c .eslintrc.json ./src/**/*.{ts,tsx}"
+    "lint": "eslint -c .eslintrc.cjs ./src/**/*.{ts,tsx}",
+    "lint:fix": "eslint --fix -c .eslintrc.cjs ./src/**/*.{ts,tsx}"
   },
   "keywords": [
     "react",
