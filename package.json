@@ -10,14 +10,17 @@
     "build": "pnpm --filter=sample-react-library build",
     "react:demo": "pnpm --filter=react-demo dev",
     "next:demo": "pnpm --filter=next-demo dev",
-    "remix:demo": "pnpm --filter=remix-demo dev"
+    "remix:demo": "pnpm --filter=remix-demo dev",
+    "lint": "pnpm --filter=sample-react-library lint",
+    "lint:fix": "pnpm --filter=sample-react-library lint:fix"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "tsup",
+    "ui components"
+  ],
   "author": "Franklin Shera",
   "license": "MIT",
-  "dependencies": {
-    "sample-react-library": "workspace:*"
-  },
   "devDependencies": {
     "concurrently": "^8.2.1"
   }

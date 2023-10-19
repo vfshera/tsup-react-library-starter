@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { useConfig } from "../../Provider";
 
 export function H1({ children }: { children: ReactNode }) {
-  const { headingId } = useConfig();
+  const { headingId } = useConfig()
   return (
     <h1 className={`${headingId} text-5xl   font-extrabold`}> {children} </h1>
   );
