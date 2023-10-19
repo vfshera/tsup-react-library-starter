@@ -12,7 +12,9 @@
     "next:demo": "pnpm --filter=next-demo dev",
     "remix:demo": "pnpm --filter=remix-demo dev",
     "lint": "pnpm --filter=sample-react-library lint",
-    "lint:fix": "pnpm --filter=sample-react-library lint:fix"
+    "lint:fix": "pnpm --filter=sample-react-library lint:fix",
+    "pre-commit": "pnpm run --filter=sample-react-library pre-commit",
+    "prepare": "husky install"
   },
   "keywords": [
     "react",
@@ -22,6 +24,8 @@
   "author": "Franklin Shera",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "concurrently": "^8.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2"
   }
 }
