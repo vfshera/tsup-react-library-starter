@@ -20,7 +20,10 @@ export const useConfig = () => {
 };
 
 export const Provider: FC<ProviderProps> = ({ children, options = {} }) => {
-  const config = useMemo(() => ({ ...defaultConfig, ...options }), [options]);
+  const config = useMemo<Config>(
+    () => ({ ...defaultConfig, ...options }),
+    [options],
+  );
   return (
     <ConfigContext.Provider value={config}>
       <div className="sample-react-library">{children}</div>
