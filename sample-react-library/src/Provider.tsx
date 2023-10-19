@@ -1,4 +1,4 @@
-import { FC, ReactNode, createContext, useContext } from "react";
+import { FC, ReactNode, createContext, useContext, useMemo } from "react";
 
 export const defaultConfig = {
   btnId: "sample-btn",
@@ -19,8 +19,11 @@ export const useConfig = () => {
   return config;
 };
 
-export const Provider: FC<ProviderProps> = ({ children, options = {} }) => (
-  <ConfigContext.Provider value={{ ...defaultConfig, ...options }}>
-    <div className={`sample-react-library`}>{children}</div>
-  </ConfigContext.Provider>
-);
+export const Provider: FC<ProviderProps> = ({ children, options = {} }) => {
+  const config = useMemo(() => ({ ...defaultConfig, ...options }), [options]);
+  return (
+    <ConfigContext.Provider value={config}>
+      <div className="sample-react-library">{children}</div>
+    </ConfigContext.Provider>
+  );
+};
