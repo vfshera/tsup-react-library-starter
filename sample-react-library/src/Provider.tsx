@@ -26,7 +26,7 @@ export const Provider: FC<ProviderProps> = ({ children, options = {} }) => {
   );
   return (
     <ConfigContext.Provider value={config}>
-      <div className="sample-react-library">{children}</div>
+      <div className="sample-react-library-wrapper">{children}</div>
     </ConfigContext.Provider>
   );
 };
