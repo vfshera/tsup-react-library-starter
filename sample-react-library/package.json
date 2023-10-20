@@ -1,7 +1,7 @@
 {
   "name": "sample-react-library",
   "version": "0.0.1",
-  "description": "",
+  "description": "Lets create a react ui library with tsup",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
