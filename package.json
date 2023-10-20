@@ -24,6 +24,8 @@
   "author": "Franklin Shera",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "concurrently": "^8.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2"
