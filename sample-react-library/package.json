@@ -18,6 +18,9 @@
       "require": "./dist/styles.css"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -31,6 +34,14 @@
     "component library"
   ],
   "author": "Franklin Shera",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vfshera/sample-react-library.git",
+    "directory": "sample-react-library"
+  },
+  "bugs": {
+    "url": "https://github.com/vfshera/sample-react-library/issues"
+  },
   "license": "MIT",
   "files": [
     "dist/*"

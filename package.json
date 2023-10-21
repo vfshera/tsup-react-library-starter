@@ -1,5 +1,6 @@
 {
   "name": "tsup-react-library-starter",
+  "private": true,
   "version": "1.0.0",
   "description": "Tsup React library starter",
   "scripts": {
@@ -14,7 +15,10 @@
     "lint": "pnpm --filter=sample-react-library lint",
     "lint:fix": "pnpm --filter=sample-react-library lint:fix",
     "pre-commit": "pnpm run --filter=sample-react-library pre-commit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "postinstall": "pnpm prepare"
   },
   "keywords": [
     "react",
