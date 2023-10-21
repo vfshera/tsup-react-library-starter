@@ -17,7 +17,7 @@
     "isbot": "^3.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sample-react-library": "workspace:*"
+    "@vfshera/sample-react-library": "workspace:*"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.0.1",
@@ -30,5 +30,6 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "version": null
 }
