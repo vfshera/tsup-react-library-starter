@@ -12,10 +12,6 @@
       "import": "./dist/components/*/index.mjs",
       "require": "./dist/components/*/index.js",
       "types": "./dist/components/*/index.d.ts"
-    },
-    "./styles.css": {
-      "import": "./dist/styles.css",
-      "require": "./dist/styles.css"
     }
   },
   "publishConfig": {
